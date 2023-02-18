@@ -1,0 +1,391 @@
+{
+	"info": {
+		"_postman_id": "d724bd80-6485-4c5e-a959-a48e45803c89",
+		"name": "Bank Api",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "25574032"
+	},
+	"item": [
+		{
+			"name": "localhost:8084/bank/customer/GetCustomerByActive",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:8084/bank/customer/GetCustomerByActive",
+					"host": [
+						"localhost"
+					],
+					"port": "8084",
+					"path": [
+						"bank",
+						"customer",
+						"GetCustomerByActive"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "localhost:8084/bank/customer/GetCustomerById/{customerId}",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:8084/bank/customer/GetCustomerById/1",
+					"host": [
+						"localhost"
+					],
+					"port": "8084",
+					"path": [
+						"bank",
+						"customer",
+						"GetCustomerById",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "localhost:8084/bank/customer/AddCustomer",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"name\": \"\",\r\n    \"surname\": \"\",\r\n    \"address\": \"\",\r\n    \"dob\": \"\",\r\n    \"phone\": \"\",\r\n    \"cif\": \"\",\r\n    \"pin\": \"\",\r\n    \"seria\": \"\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:8084/bank/customer/AddCustomer",
+					"host": [
+						"localhost"
+					],
+					"port": "8084",
+					"path": [
+						"bank",
+						"customer",
+						"AddCustomer"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "localhost:8084/bank/customer/UpdateCustomer",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"id\":  0,\r\n    \"name\": \"\",\r\n    \"surname\": \"\",\r\n    \"address\": \"\",\r\n    \"dob\": \"\",\r\n    \"phone\": \"\",\r\n    \"cif\": \"\",\r\n    \"pin\": \"\",\r\n    \"seria\": \"\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:8084/bank/customer/UpdateCustomer",
+					"host": [
+						"localhost"
+					],
+					"port": "8084",
+					"path": [
+						"bank",
+						"customer",
+						"UpdateCustomer"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "localhost:8084/bank/customer/DeleteCustomer/{customerId}",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "localhost:8084/bank/customer/DeleteCustomer/0",
+					"host": [
+						"localhost"
+					],
+					"port": "8084",
+					"path": [
+						"bank",
+						"customer",
+						"DeleteCustomer",
+						"0"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "localhost:8084/bank/account/GetAllAccountByActive",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:8084/bank/account/GetAllAccountByActive",
+					"host": [
+						"localhost"
+					],
+					"port": "8084",
+					"path": [
+						"bank",
+						"account",
+						"GetAllAccountByActive"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "localhost:8084/bank/account/GetAccountByCustomerId/{customerId}",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:8084/bank/account/GetAccountByCustomerId/1",
+					"host": [
+						"localhost"
+					],
+					"port": "8084",
+					"path": [
+						"bank",
+						"account",
+						"GetAccountByCustomerId",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "localhost:8084/bank/account/AddAccount",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"name\": \"\",\r\n    \"accountNo\": \"\",\r\n    \"iban\": \"\",\r\n    \"amount\": 0,\r\n    \"currency\": \"\",\r\n    \"customerId\": 0\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:8084/bank/account/AddAccount",
+					"host": [
+						"localhost"
+					],
+					"port": "8084",
+					"path": [
+						"bank",
+						"account",
+						"AddAccount"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "localhost:8084/bank/account/UpdateAccount",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"id\": 0,\r\n    \"name\": \"\",\r\n    \"accountNo\": \"\",\r\n    \"iban\": \"\",\r\n    \"amount\": 0,\r\n    \"currency\": \"\",\r\n    \"customerId\": 0\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:8084/bank/account/UpdateAccount",
+					"host": [
+						"localhost"
+					],
+					"port": "8084",
+					"path": [
+						"bank",
+						"account",
+						"UpdateAccount"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "localhost:8084/bank/account/DeleteAccount/{accountId}",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "localhost:8084/bank/account/DeleteAccount/0",
+					"host": [
+						"localhost"
+					],
+					"port": "8084",
+					"path": [
+						"bank",
+						"account",
+						"DeleteAccount",
+						"0"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "localhost:8084/bank/transaction/GetAllTransactionByActive",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:8084/bank/transaction/GetAllTransactionByActive",
+					"host": [
+						"localhost"
+					],
+					"port": "8084",
+					"path": [
+						"bank",
+						"transaction",
+						"GetAllTransactionByActive"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "localhost:8084/bank/transaction/GetTransactionById/{transactionId}",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:8084/bank/transaction/GetTransactionById/1",
+					"host": [
+						"localhost"
+					],
+					"port": "8084",
+					"path": [
+						"bank",
+						"transaction",
+						"GetTransactionById",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "localhost:8084/bank/transaction/GetTransactionByAccountId/{accountId}",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:8084/bank/transaction/GetTransactionByAccountId/0",
+					"host": [
+						"localhost"
+					],
+					"port": "8084",
+					"path": [
+						"bank",
+						"transaction",
+						"GetTransactionByAccountId",
+						"0"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "localhost:8084/bank/transaction/AddTransaction",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"receiptNo\": \"\",\r\n    \"dtAccount\": 0,\r\n    \"crAccount\": \"\",\r\n    \"amount\": 0\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:8084/bank/transaction/AddTransaction",
+					"host": [
+						"localhost"
+					],
+					"port": "8084",
+					"path": [
+						"bank",
+						"transaction",
+						"AddTransaction"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "localhost:8084/bank/transaction/UpdateTransaction",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"id\": 0,\r\n    \"receiptNo\": \"\",\r\n    \"dtAccount\": 0,\r\n    \"crAccount\": \"\",\r\n    \"amount\": 0\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:8084/bank/transaction/UpdateTransaction",
+					"host": [
+						"localhost"
+					],
+					"port": "8084",
+					"path": [
+						"bank",
+						"transaction",
+						"UpdateTransaction"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "localhost:8084/bank/transaction/DeleteTransaction/{transactionId}",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "localhost:8084/bank/transaction/DeleteTransaction/0",
+					"host": [
+						"localhost"
+					],
+					"port": "8084",
+					"path": [
+						"bank",
+						"transaction",
+						"DeleteTransaction",
+						"0"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
